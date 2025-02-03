@@ -61,7 +61,7 @@ Users worldwide have the right to:
 - **Request deletion** of their personal data by contacting our support team.
 
 To request data access or deletion, please email us at:  
-**support@jeenify.com**
+**idanb@jeen.ai**
 
 ---
 
