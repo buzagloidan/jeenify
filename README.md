@@ -1,7 +1,3 @@
-Below is the revised privacy policy adapted for Jeenify. Feel free to adjust any details (such as the contact email) as needed:
-
----
-
 **Privacy Policy**  
 **Effective Date:** 3.2.2025  
 **Last Updated:** 3.2.2025
