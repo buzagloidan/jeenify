@@ -13,8 +13,8 @@
   ],
   "content_scripts": [{
     "matches": [
-      "https://app-dev.jeen.ai/*",
-      "https://app-test.jeen.ai/*"
+      "https://example.com/*",
+      "https://example2.com/*"
     ],
     "js": ["content-script.js"],
     "css": ["styles.css"]
