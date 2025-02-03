@@ -1,0 +1,119 @@
+.gemini-optimize-btn[data-v-7d88bc5a] {
+  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%) !important;
+  border: none !important;
+  padding: 8px 16px !important;
+  cursor: pointer !important;
+  font-size: 14px !important;
+  color: white !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  transition: all 0.2s ease-in-out !important;
+  margin-right: 0 !important;
+  position: relative !important;
+  border-radius: 8px !important;
+  font-weight: 500 !important;
+  box-shadow: 0 2px 4px rgba(99, 102, 241, 0.15) !important;
+  unicode-bidi: isolate !important;
+  direction: ltr !important;
+}
+
+.gemini-optimize-btn[data-v-7d88bc5a]:hover {
+  background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%) !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 4px 8px rgba(99, 102, 241, 0.2) !important;
+}
+
+.gemini-optimize-btn[data-v-7d88bc5a]:active {
+  transform: translateY(0) !important;
+  box-shadow: 0 1px 2px rgba(99, 102, 241, 0.15) !important;
+}
+
+.gemini-optimize-btn[data-v-7d88bc5a]:disabled {
+  background: linear-gradient(135deg, #c7d2fe 0%, #ddd6fe 100%) !important;
+  cursor: not-allowed !important;
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+/* Add an icon before the text */
+.gemini-optimize-btn[data-v-7d88bc5a]::before {
+  content: "✨" !important;
+  font-size: 16px !important;
+  margin-right: 2px !important;
+  animation: sparkle 1.5s ease-in-out infinite !important;
+  display: inline-block !important;
+  vertical-align: middle !important;
+}
+
+@keyframes sparkle {
+  0% { opacity: 0.7; transform: scale(0.95); }
+  50% { opacity: 1; transform: scale(1.05); }
+  100% { opacity: 0.7; transform: scale(0.95); }
+}
+
+/* Loading state animation */
+.gemini-optimize-btn[data-v-7d88bc5a]:disabled::after {
+  content: "" !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent) !important;
+  animation: loading 1.5s infinite !important;
+}
+
+@keyframes loading {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+/* Update textarea styles */
+textarea.question-input {
+  unicode-bidi: plaintext;
+  text-align: start;
+  white-space: pre-wrap !important;
+  writing-mode: horizontal-tb !important;
+}
+
+/* Add button container styles */
+.optimize-button-container {
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+}
+
+/* Rating dot styles */
+.rating-dot {
+  width: 8px !important;
+  height: 8px !important;
+  border-radius: 50% !important;
+  transition: all 0.3s ease !important;
+  position: relative !important;
+}
+
+.rating-dot::after {
+  content: '' !important;
+  position: absolute !important;
+  width: 12px !important;
+  height: 12px !important;
+  border-radius: 50% !important;
+  background: inherit !important;
+  opacity: 0.3 !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+}
+
+.rating-dot.poor {
+  background-color: #ef4444 !important;
+}
+
+.rating-dot.okay {
+  background-color: #f59e0b !important;
+}
+
+.rating-dot.good {
+  background-color: #22c55e !important;
+} 

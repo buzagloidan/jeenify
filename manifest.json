@@ -1,0 +1,22 @@
+{
+  "name": "Jeenify",
+  "version": "1.0",
+  "manifest_version": 3,
+  "description": "Enhance your prompts with Jeenify - A smart prompt optimizer for Jeen.ai",
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "host_permissions": [
+    "https://generativelanguage.googleapis.com/*"
+  ],
+  "content_scripts": [{
+    "matches": [
+      "https://app-dev.jeen.ai/*",
+      "https://app-test.jeen.ai/*"
+    ],
+    "js": ["content-script.js"],
+    "css": ["styles.css"]
+  }]
+}
